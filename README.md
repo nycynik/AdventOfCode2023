@@ -13,6 +13,10 @@
 
 This is a c++ (mostly) AdventOfCode 2023 repo. This was started with a great starter (check it out in the top, it's a template.)
 
+to use `nextday` you have to export your adventofcode cookie using 
+
+    ❯ export ENVSESSION=<your cookie here>
+    
 ## How to develop with this repo
 
 Check out [DEV_README.md](./DEV_README.md) for more information on development
