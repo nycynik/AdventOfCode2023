@@ -57,6 +57,8 @@ build/solutions/aoc_day_1.o: src/solutions/aoc_day_1.cpp  \
 	include/common/constants.h
 	g++ ${CPPFLAGS} -o build/solutions/aoc_day_1.o -c src/solutions/aoc_day_1.cpp
 
+# END daily solutions
+
 bin/lib/libsolutions.a: build/solutions/aoc_day.o  \
 	build/solutions/aoc_days.o \
 	build/solutions/aoc_day_0.o \
