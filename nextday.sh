@@ -1,0 +1,28 @@
+#!/bin/bash
+
+git co main
+git switch day${1} 2>/dev/null || git switch -c day${1};
+
+cp ./include/solutions/aoc_day_0.h ./include/solutions/aoc_day_${1}.h
+cp ./src/solutions/aoc_day_0.cpp ./src/solutions/aoc_day_${1}.cpp
+
+curl "https://adventofcode.com/2022/day/${1}/input" \
+  -o ./data/2023/day${1}_input.txt \
+  -H 'authority: adventofcode.com' \
+  -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'cache-control: max-age=0' \
+  -H "cookie: session=${ENVSESSION}" \
+  -H 'dnt: 1' \
+  -H 'sec-ch-ua: "Google Chrome";v="119", "Chromium";v="119", "Not?A_Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  -H 'sec-fetch-dest: document' \
+  -H 'sec-fetch-mode: navigate' \
+  -H 'sec-fetch-site: none' \
+  -H 'sec-fetch-user: ?1' \
+  -H 'sec-gpc: 1' \
+  -H 'upgrade-insecure-requests: 1' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36' \
+  --compressed 
+  
