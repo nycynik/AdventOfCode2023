@@ -4,7 +4,7 @@
  *        +     *           *           *                *    ___ *    *
       *  ( )          | advent of code *           *         |   |
    *    (  •)    *    | 2023    *            +              .|-H-|.    *
-       ( •   )      * | https://adventofcode.com/     *   \| (._.)
+       ( •   )      * | [https://adventofcode.com/](https://adventofcode.com/)     *   \| (._.)
 *     (     • )        +         *      *         *        \(  .  )--<  *
      (  •      )   *     *     +              *        *   (   .   )   +
 </pre>
