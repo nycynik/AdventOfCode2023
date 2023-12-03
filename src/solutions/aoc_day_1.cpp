@@ -59,7 +59,7 @@ string AocDay1::part1(string filename, vector<string> extra_args)
     long sum = 0;
     for (vector<long>::iterator iter = data.begin(); iter != data.end(); ++iter)
     {
-        cout << *iter;
+        // cout << *iter;
         sum += *iter;
     }
     ostringstream out;
@@ -122,7 +122,7 @@ string AocDay1::part2(string filename, vector<string> extra_args)
         }
 
         l = (lowest_value * 10) + highest_value;
-        cout << "found " << l << " for: " << to_convert << endl;
+        // cout << "found " << l << " for: " << to_convert << endl;
         data.push_back(l);
     }
 
