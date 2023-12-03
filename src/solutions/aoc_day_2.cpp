@@ -97,14 +97,14 @@ string AocDay2::part1(string filename, vector<string> extra_args)
     {
         bool isPossible = true;
 
-        std::cout << "Game ID: " << game.game_id << std::endl;
+        // std::cout << "Game ID: " << game.game_id << std::endl;
         for (const auto &entry : game.cubes)
         {
             if (limits[entry.first] < entry.second)
             {
                 isPossible = false;
             }
-            std::cout << "  Color: " << entry.first << ", Count: " << entry.second << std::endl;
+            // std::cout << "  Color: " << entry.first << ", Count: " << entry.second << std::endl;
         }
 
         if (isPossible)
@@ -126,11 +126,11 @@ string AocDay2::part2(string filename, vector<string> extra_args)
     {
         long powerCube = 1;
 
-        std::cout << "Game ID: " << game.game_id << std::endl;
+        // std::cout << "Game ID: " << game.game_id << std::endl;
         for (const auto &entry : game.cubes)
         {
             powerCube *= entry.second;
-            std::cout << "  Color: " << entry.first << ", Count: " << entry.second << std::endl;
+            // std::cout << "  Color: " << entry.first << ", Count: " << entry.second << std::endl;
         }
 
         powerCubeTotal += powerCube;
