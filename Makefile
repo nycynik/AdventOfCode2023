@@ -111,3 +111,6 @@ all: build/runner/aoc_test.o  \
 	bin/lib/librunner.a  \
 	bin/lib/libsolutions.a  \
 	bin/aoc
+
+check:
+	bin/aoc -d 0 -p 1 -t ./data/sample/test_index_0.txt
