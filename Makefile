@@ -113,4 +113,4 @@ all: build/runner/aoc_test.o  \
 	bin/aoc
 
 check:
-	bin/aoc -d 0 -p 1 -t ./data/sample/test_index_0.txt
+	bin/aoc -r ./data/2023/tests/test_index_2023.txt
