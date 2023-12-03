@@ -1,6 +1,8 @@
 #!/bin/bash
 
-mkdir build
+mkdir ./build
+mkdir ./build/runner
+mkdir ./build/solutions
 
 echo Configured
 
