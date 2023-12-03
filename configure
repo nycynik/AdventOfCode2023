@@ -4,5 +4,8 @@ mkdir ./build
 mkdir ./build/runner
 mkdir ./build/solutions
 
+mkdir ./bin
+mkdir ./bin/lib
+
 echo Configured
 
