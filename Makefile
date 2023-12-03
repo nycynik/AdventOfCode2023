@@ -114,3 +114,4 @@ all: build/runner/aoc_test.o  \
 
 check:
 	bin/aoc -r ./data/2023/tests/test_index_2023.txt
+
