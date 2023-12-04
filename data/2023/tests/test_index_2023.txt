@@ -1,0 +1,6 @@
+# format is day,part,filename,expected result,any extra arguments (comma-separated)
+1,1,day1_1.txt,142
+1,2,day1_2_test.txt,402
+2,1,day2_1.txt,8
+2,2,day2_1.txt,2286
+3,1,day_3_1.txt,4361

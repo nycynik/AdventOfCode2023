@@ -4,10 +4,14 @@
  *        +     *           *           *                *    ___ *    *
       *  ( )          | advent of code *           *         |   |
    *    (  •)    *    | 2023    *            +              .|-H-|.    *
-       ( •   )      * | [https://adventofcode.com/](https://adventofcode.com/)     *   \| (._.)
+       ( •   )      * | https://adventofcode.com/     *   \| (._.)
 *     (     • )        +         *      *         *        \(  .  )--<  *
      (  •      )   *     *     +              *        *   (   .   )   +
 </pre>
+
+# What is it?
+
+[adventofcode.com](https://adventofcode.com/2023)
 
 # Development
 
