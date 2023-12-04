@@ -5,7 +5,7 @@ git switch day${1} 2>/dev/null || git switch -c day${1};
 
 cp ./include/solutions/aoc_day_0.h ./include/solutions/aoc_day_${1}.h
 sed -i -e "s/__AOC_DAY_0__/__AOC_DAY_${1}__/g" ./include/solutions/aoc_day_${1}.h
-sed -i -e "s/AocDay0/_AocDay${1}/g" ./include/solutions/aoc_day_${1}.h
+sed -i -e "s/AocDay0/AocDay${1}/g" ./include/solutions/aoc_day_${1}.h
 
 cp ./src/solutions/aoc_day_0.cpp ./src/solutions/aoc_day_${1}.cpp
 sed -i -e "s/aoc_day_0.h/aoc_day_${1}.h/g" ./src/solutions/aoc_day_${1}.cpp
@@ -16,7 +16,7 @@ sed -i -e "s/member to the map goes here/member to the map goes here\n    m_days
 
     
 
-curl "https://adventofcode.com/2022/day/${1}/input" \
+curl "https://adventofcode.com/2023/day/${1}/input" \
   -o ./data/2023/day${1}_input.txt \
   -H 'authority: adventofcode.com' \
   -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \
