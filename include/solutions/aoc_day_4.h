@@ -3,10 +3,15 @@
 
 #include "aoc_day.h"
 
+struct Game;
+
 class AocDay4 : public AocDay
 {
     private:
-        vector<long> read_input(string filename);
+        std::vector<Game> read_input(string filename);
+        template <typename T>
+        std::vector<T> splitString(const std::string &input);
+
     public:
         AocDay4();
         ~AocDay4();
