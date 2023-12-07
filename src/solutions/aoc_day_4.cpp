@@ -6,6 +6,7 @@
 #include <sstream>
 #include <cstdlib>
 #include <cmath>
+#include <algorithm>
 
 #include "aoc_day_4.h"
 #include "file_utils.h"
@@ -65,8 +66,8 @@ vector<Game> AocDay4::read_input(string filename)
         g.winning = splitString<int>(to_convert.substr(firstSplitPos + 2, secondSplitPos - firstSplitPos));
         g.ours = splitString<int>(to_convert.substr(secondSplitPos + 2));
 
-        std::sort(g.winning.begin(), g.winning.end());
-        std::sort(g.ours.begin(), g.ours.end());
+        sort(g.winning.begin(), g.winning.end());
+        sort(g.ours.begin(), g.ours.end());
 
         data.push_back(g);
     }

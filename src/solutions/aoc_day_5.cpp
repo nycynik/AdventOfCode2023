@@ -3,6 +3,7 @@
 #include <iostream>
 #include <sstream>
 #include <cstdlib>
+#include <limits>
 
 #include "aoc_day_5.h"
 #include "file_utils.h"
@@ -157,7 +158,7 @@ Alminac AocDay5::read_input(string filename)
 string AocDay5::part1(string filename, vector<string> extra_args)
 {
     Alminac data = read_input(filename);
-    long lowestLocation = LLONG_MAX;
+    long lowestLocation = std::numeric_limits<long long>().max();
 
     for (long seed : data.seeds)
     {
@@ -183,7 +184,7 @@ string AocDay5::part1(string filename, vector<string> extra_args)
 string AocDay5::part2(string filename, vector<string> extra_args)
 {
     Alminac data = read_input(filename);
-    long lowestLocation = LLONG_MAX;
+    long lowestLocation = std::numeric_limits<long long>().max();
 
     std::vector<std::pair<long, long>> seedPairs = convertToPairs(data.seeds);
 
