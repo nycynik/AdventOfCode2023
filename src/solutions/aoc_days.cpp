@@ -3,6 +3,7 @@
 #include "aoc_days.h"
 #include "aoc_day.h"
 // includes for each day will go here
+#include "aoc_day_14.h"
 #include "aoc_day_6.h"
 #include "aoc_day_0.h"
 #include "aoc_day_1.h"
@@ -16,6 +17,7 @@ using namespace std;
 AocDays::AocDays()
 {
     // adding each member to the map goes here
+    m_days[14] = new AocDay14();
     m_days[6] = new AocDay6();
     m_days[0] = new AocDay0();
     m_days[1] = new AocDay1();
