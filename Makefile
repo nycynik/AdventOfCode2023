@@ -98,6 +98,9 @@ build/solutions/aoc_day_15.o: src/solutions/aoc_day_15.cpp  \
 	include/common/constants.h
 	g++ ${CPPFLAGS} -o build/solutions/aoc_day_15.o -c src/solutions/aoc_day_15.cpp
 
+build/solutions/aoc_day_12.o: src/solutions/aoc_day_12.cpp  \n	include/solutions/aoc_day_12.h \n	include/solutions/aoc_day.h \n	include/common/constants.h
+	g++ ${CPPFLAGS} -o build/solutions/aoc_day_1.o -c src/solutions/aoc_day_1.cpp12
+
 # END daily solutions
 
 bin/lib/libsolutions.a: build/solutions/aoc_grid.o \
