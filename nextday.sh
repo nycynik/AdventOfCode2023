@@ -15,7 +15,7 @@ sed -i -e "s/AocDay(0/AocDay(${1}/g" ./src/solutions/aoc_day_${1}.cpp
 sed -i -e "s/member to the map goes here/member to the map goes here\n    m_days[${1}] = new AocDay${1}();/" ./src/solutions/aoc_days.cpp
 sed -i -e "s/includes for each day will go here/includes for each day will go here\n#include \"aoc_day_${1}.h\"/" ./src/solutions/aoc_days.cpp
 
-sed -i -e "s/# END daily solutions/build\/solutions\/aoc_day_${1}.o: src\/solutions\/aoc_day_${1}.cpp  \\\n	include\/solutions\/aoc_day_${1}.h \\\n	include\/solutions\/aoc_day.h \\\n	include\/common\/constants.h\n	g++ ${CPPFLAGS} -o build\/solutions\/aoc_day_1.o -c src\/solutions\/aoc_day_1.cpp${1}\n\n# END daily solutions/" ./Makefile
+sed -i -E "s/# END daily solutions/build\/solutions\/aoc_day_${1}.o: src\/solutions\/aoc_day_${1}.cpp  \\\n	include\/solutions\/aoc_day_${1}.h \\\n	include\/solutions\/aoc_day.h \\\n	include\/common\/constants.h\n	g++ \${CPPFLAGS} -o build\/solutions\/aoc_day_1.o -c src\/solutions\/aoc_day_1.cpp${1}\n\n# END daily solutions/" ./Makefile
 sed -i -e "s/build\/solutions\/aoc_days.o build\/solutions\/aoc_day_0.o \/build\/solutions\/aoc_days.o build\/solutions\/aoc_day_0.o build\/solutions\/aoc_day_{$1}.o /" ./Makefile
 sed -i -e "s/	build/solutions/aoc_days.o  \\\	build/solutions/aoc_day_${1}.o  \\n/	build/solutions/aoc_days.o  \\/g" ./Makefile
 
