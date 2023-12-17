@@ -92,17 +92,18 @@ build/solutions/aoc_day_6.o: src/solutions/aoc_day_6.cpp  \
 	include/common/constants.h
 	g++ ${CPPFLAGS} -o build/solutions/aoc_day_6.o -c src/solutions/aoc_day_6.cpp
 
+build/solutions/aoc_day_11.o: src/solutions/aoc_day_11.cpp  \
+	include/solutions/aoc_day_11.h \
+	include/solutions/aoc_day.h \
+	include/common/constants.h
+	g++ ${CPPFLAGS} -o build/solutions/aoc_day_11.o -c src/solutions/aoc_day_11.cpp
+	
 build/solutions/aoc_day_15.o: src/solutions/aoc_day_15.cpp  \
 	include/solutions/aoc_day_15.h \
 	include/solutions/aoc_day.h \
 	include/common/constants.h
 	g++ ${CPPFLAGS} -o build/solutions/aoc_day_15.o -c src/solutions/aoc_day_15.cpp
 
-build/solutions/aoc_day_11.o: src/solutions/aoc_day_11.cpp  \
-	include/solutions/aoc_day_11.h \
-	include/solutions/aoc_day.h \
-	include/common/constants.h
-	g++ ${CPPFLAGS} -o build/solutions/aoc_day_11.o -c src/solutions/aoc_day_11.cpp
 
 # END daily solutions
 
