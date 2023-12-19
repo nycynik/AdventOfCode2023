@@ -123,7 +123,8 @@ bin/lib/libsolutions.a: build/solutions/aoc_grid.o \
 	build/solutions/aoc_day_5.o \
 	build/solutions/aoc_day_6.o \
 	build/solutions/aoc_day_11.o \
-	build/solutions/aoc_day_15.o
+	build/solutions/aoc_day_15.o \
+	build/solutions/aoc_day_17.o 
 	ar rcs bin/lib/libsolutions.a build/solutions/aoc_day.o build/solutions/aoc_days.o \
 	build/solutions/aoc_grid.o build/solutions/aoc_day_0.o build/solutions/aoc_day_1.o \
 	build/solutions/aoc_day_2.o build/solutions/aoc_day_3.o build/solutions/aoc_day_4.o \

@@ -18,6 +18,11 @@ public:
 
     std::string toString() const { return "(" + std::to_string(x) + ", " + std::to_string(y) + ")"; }
 
+    bool operator==(const AOC_Point p) const
+    {
+        return ((p.getX() == x) && (p.getY() == y));
+    }
+
     long distanceTo(const AOC_Point &other) const
     {
         return sqrt(pow(x - other.x, 2) + pow(y - other.y, 2));
