@@ -10,7 +10,7 @@
 
 using namespace std;
 
-AocDay11::AocDay11():AocDay(11)
+AocDay11::AocDay11() : AocDay(11)
 {
 }
 

@@ -11,6 +11,7 @@
 #include "aoc_day_5.h"
 #include "aoc_day_6.h"
 #include "aoc_day_7.h"
+#include "aoc_day_9.h"
 #include "aoc_day_11.h"
 #include "aoc_day_15.h"
 
@@ -27,6 +28,7 @@ AocDays::AocDays()
     m_days[5] = new AocDay5();
     m_days[6] = new AocDay6();
     m_days[7] = new AocDay7();
+    m_days[9] = new AocDay9();
     m_days[11] = new AocDay11();
     m_days[15] = new AocDay15();    
 }
